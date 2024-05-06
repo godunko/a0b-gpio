@@ -10,12 +10,12 @@ package A0B.GPIO
   with Preelaborate
 is
 
-   type Input_Pin is limited interface;
+   type Input_Line is limited interface;
 
-   not overriding function Get (Self : Input_Pin) return Boolean is abstract;
+   not overriding function Get (Self : Input_Line) return Boolean is abstract;
 
-   type Output_Pin is limited interface;
+   type Output_Line is limited interface;
 
-   not overriding procedure Set (Self : Output_Pin; To : Boolean) is abstract;
+   not overriding procedure Set (Self : Output_Line; To : Boolean) is abstract;
 
 end A0B.GPIO;
